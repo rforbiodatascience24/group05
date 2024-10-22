@@ -14,8 +14,32 @@ Legs \>\> pull \>\> push
 
 # Natalia
 
+hihi :) Viva Franco
+
+```{r, echo = FALSE}
+2 * 2
+```
+
 # Xavi
+
+bibiibibibibibi
+
+```{r}
+print("bibibi")
+```
 
 # Luis
 
+HOla soy Luis, dejo pelos en la ducho
+
+```{r}
+print("el dani no se entera de media")
+```
+
 # Miguel
+
+Hola soy miguel
+
+```{r}
+print("Hola soy Miguel")
+```
