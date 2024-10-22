@@ -8,6 +8,12 @@ editor: visual
 
 # Natalia
 
+hihi :)
+
+```{r, echo = FALSE}
+2 * 2
+```
+
 # Xavi
 
 # Luis
