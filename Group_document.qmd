@@ -37,3 +37,11 @@ Hola soy miguel
 ```{r}
 print("Hola soy Miguel")
 ```
+
+## New analysis
+
+Hola, este es mi cumpleaños
+
+```{r}
+print("Mi cumpleaños es el 19/11")
+```
