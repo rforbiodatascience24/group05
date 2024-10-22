@@ -12,4 +12,10 @@ editor: visual
 
 # Luis
 
+HOla soy Luis, dejo pelos en la ducho
+
+```{r}
+print("el dani no se entera de media")
+```
+
 # Miguel
