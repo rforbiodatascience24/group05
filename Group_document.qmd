@@ -32,6 +32,12 @@ hihi :) Viva Franco y Tejero
 
 # Xavi
 
+## New analysis
+
+```{r}
+2+2+5
+```
+
 bibiibibibibibi
 
 ```{r}
