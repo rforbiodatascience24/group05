@@ -13,3 +13,9 @@ editor: visual
 # Luis
 
 # Miguel
+
+Hola soy miguel
+
+```{r}
+print("Hola soy Miguel")
+```
