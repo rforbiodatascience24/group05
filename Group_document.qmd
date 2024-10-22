@@ -75,5 +75,3 @@ Hola soy miguel
 ```{r}
 print("Hola soy Miguel")
 ```
-
-## 
