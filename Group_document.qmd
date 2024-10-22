@@ -10,6 +10,12 @@ editor: visual
 
 # Xavi
 
+bibiibibibibibi
+
+```{r}
+print("bibibi")
+```
+
 # Luis
 
 # Miguel
