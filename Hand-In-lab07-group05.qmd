@@ -41,3 +41,11 @@ pca_fit %>%
   ) +
   theme_half_open(12) + background_grid()
 ```
+
+## Xavi
+
+## Natalia
+
+## Dani
+
+## Luis
