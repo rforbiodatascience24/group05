@@ -1,6 +1,6 @@
 ---
 title: "s243284"
-author: "Miguel Blanco"
+author: "Miguel Blanco hola soy un caraanchoa" 
 format: html
 editor: visual
 ---
