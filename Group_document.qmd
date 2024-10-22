@@ -30,6 +30,15 @@ hihi :) Viva Franco y Tejero
 2 * 2
 ```
 
+## New Analysis
+
+```{r, echo = FALSE}
+library("msigdbr")
+library("fgsea")
+library("ggplot2")
+library("tidyverse")
+```
+
 # Xavi
 
 ## New analysis
