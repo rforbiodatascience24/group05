@@ -12,9 +12,19 @@ Legs \>\> pull \>\> push
 1+1
 ```
 
+## New feature
+
+"the only thing that matters in life is having a good time"
+
+"my only fear is dying skinny"
+
+```{r}
+2+2
+```
+
 # Natalia
 
-hihi :) Viva Franco
+hihi :) Viva Franco y Tejero
 
 ```{r, echo = FALSE}
 2 * 2
