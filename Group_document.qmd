@@ -6,6 +6,12 @@ editor: visual
 
 # Dani
 
+Legs \>\> pull \>\> push
+
+```{r}
+1+1
+```
+
 # Natalia
 
 # Xavi
