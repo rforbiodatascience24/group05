@@ -59,6 +59,13 @@ HOla soy Luis, dejo pelos en la ducho
 
 ```{r}
 print("el dani no se entera de media")
+
+```
+
+## New analysis from Luis
+
+```{r}
+print("estoy probando")
 ```
 
 # Miguel
@@ -69,8 +76,4 @@ Hola soy miguel
 print("Hola soy Miguel")
 ```
 
-## New analysis from Luis
-
-```{r}
-print("estoy probando")
-```
+## 
