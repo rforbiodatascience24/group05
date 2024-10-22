@@ -1,6 +1,9 @@
 ---
-title: "Hand in lab 07"
-format: html
+title: "Lab 7 Assignment: Group 05"
+subtitle: 'Students: s243284, s242872,	s243302,	s243547,	s243360'
+format:
+  html:
+    embed-resources: true
 editor: visual
 ---
 
