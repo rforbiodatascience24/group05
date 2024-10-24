@@ -49,3 +49,35 @@ pca_fit %>%
 ## Dani
 
 ## Luis
+
+```{r}
+#| echo: true
+#| eval: false
+
+base_url <- "http://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/ecological/"
+raw_data_path <- "data/_raw/"
+
+if (!dir.exists("data/_raw/")) {  #The folder data/_raw needs to be created before!!
+  dir.create("data/_raw/", recursive = TRUE)
+}
+
+SPE <- read_csv(file = str_c(base_url, "SPE_pitlatrine.csv"))
+write_csv(x = SPE,
+          file =str_c(raw_data_path, "SPE_pitlatrine.csv"))
+
+ENV <- read_csv(file = str_c(base_url, "ENV_pitlatrine.csv"))
+write_csv(x = ENV,
+          file = str_c(raw_data_path, "ENV_pitlatrine.csv"))
+
+```
+
+```{r}
+SPE |> 
+  pivot_longer(cols = -Taxa,
+               names_to = "Samples",
+               values_to = "OTU_Count")  |> 
+  full_join(ENV, by = "Samples") |> 
+  mutate(site = case_when(str_detect(Samples, "^T") ~ "Tanzania",
+                          str_detect(Samples, "^V") ~ "Vietnam")) |>  
+  write_tsv(file = "data/SPE_ENV.tsv")
+```
