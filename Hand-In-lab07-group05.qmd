@@ -91,7 +91,8 @@ pca_fit |>
   scale_color_manual(
     values = c(good = "#D55E00", poor = "#0072B2")
   ) +
-  theme_half_open(12) + background_grid()
+  theme_half_open(12) + background_grid() 
+  
 ```
 
 ```{r}
@@ -103,9 +104,9 @@ arrow_style <- arrow(
 )
 
 # plot rotation matrix
-pca_fit %>%
-  tidy(matrix = "rotation") %>%
-  pivot_wider(names_from = "PC", names_prefix = "PC", values_from = "value") %>%
+pca_fit |>
+  tidy(matrix = "rotation") |>
+  pivot_wider(names_from = "PC", names_prefix = "PC", values_from = "value") |>
   ggplot(aes(PC1, PC2)) +
   geom_segment(xend = 0, yend = 0, arrow = arrow_style) +
   geom_text(
@@ -121,8 +122,8 @@ pca_fit %>%
 ## Luis
 
 ```{r}
-pca_fit %>%
-  tidy(matrix = "eigenvalues") %>%
+pca_fit |>
+  tidy(matrix = "eigenvalues") |>
   ggplot(aes(PC, percent)) +
   geom_col(fill = "#56B4E9", alpha = 0.8) +
   scale_x_continuous(breaks = 1:9) +
