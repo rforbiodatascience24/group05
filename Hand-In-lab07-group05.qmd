@@ -18,7 +18,7 @@ library(cowplot)
 ## Data
 
 ```{r}
-gravier <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
+biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 ```
 
 ## Miguel (Until first graph)
