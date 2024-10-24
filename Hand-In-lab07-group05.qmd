@@ -83,3 +83,17 @@ pca_fit |>
 ```
 
 ## Luis
+
+```{r}
+pca_fit %>%
+  tidy(matrix = "eigenvalues") %>%
+  ggplot(aes(PC, percent)) +
+  geom_col(fill = "#56B4E9", alpha = 0.8) +
+  scale_x_continuous(breaks = 1:9) +
+  scale_y_continuous(
+    labels = scales::percent_format(),
+    expand = expansion(mult = c(0, 0.01))
+  ) +
+  scale_x_continuous(limits = c(0, 30)) +
+  theme_minimal_hgrid(12)
+```
