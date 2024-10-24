@@ -7,7 +7,19 @@ format:
 editor: visual
 ---
 
-Library
+# Lab 07 Group Assignment
+
+Miguel Blanco Chillerón, s243284
+
+Daniel Gil Conejo, 242872
+
+Luis Martín del Cerro, s243302
+
+Natalia Feced Garcia, s243547
+
+Xavier Chapatte Banaset, s243360
+
+## Load Libraries
 
 ```{r}
 library(tidyverse)
