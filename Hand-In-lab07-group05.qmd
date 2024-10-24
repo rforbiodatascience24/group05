@@ -37,41 +37,11 @@ curl::curl_download(url = target_url, destfile = output_file)
 
 ```{r}
 load(file = "data/gravier.RData")
-cancer_data <- gravier |> 
-  bind_cols() |> 
-  as_tibble()
 ```
 
-## Miguel (Until first graph)
+We will use the info and code from <https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/> to perform a PCA usind the tidyverse with the gravier data. First thing to notice is that gravier data is muhc bigger than the one used on the page, so the visualization of our PCA sometimes is completely useless, just for the sake of learning with github.
 
-Select numeric data and run PCA
-
-```{r}
-pca_fit <- cancer_data |> 
-  select(where(is.numeric)) |> 
-  prcomp(scale = TRUE)
-```
-
-```{r}
-pca_fit <- cancer_data |> 
-  select(where(is.numeric)) |> 
-  prcomp(scale = TRUE)
-
-pca_fit |>
-  augment(cancer_data) |> # add original dataset back in
-  ggplot(aes(.fittedPC1, .fittedPC2, colour =)) + 
-  geom_point(size = 1.5) +
-  scale_color_manual(
-    values = c(malignant = "#D55E00", benign = "#0072B2")
-  ) +
-  theme_half_open(12) + background_grid()
-```
-
-## Xavi
-
-## Natalia
-
-## Dani
+## PCA Data Coordinates
 
 ```{r}
 set.seed(676571)
@@ -94,6 +64,8 @@ pca_fit |>
   theme_half_open(12) + background_grid() 
   
 ```
+
+## Rotation Matrix
 
 ```{r}
 pca_fit |>
@@ -119,7 +91,7 @@ pca_fit |>
   theme_minimal_grid(12)
 ```
 
-## Luis
+## Variance explained by PC
 
 ```{r}
 pca_fit |>
