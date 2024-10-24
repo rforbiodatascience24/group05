@@ -84,10 +84,10 @@ pca_fit |>
   geom_text(
     aes(label = column),
     hjust = 1, nudge_x = -0.02, 
-    color = "#904C2F"
+    color = "#ff4690"
   ) +
   xlim(-1.25, .5) + ylim(-.5, 1) +
-  coord_fixed() + # fix aspect ratio to 1:1
+  coord_fixed() + # fix aspsect ratio to 1:1
   theme_minimal_grid(12)
 ```
 
