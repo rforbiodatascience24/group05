@@ -58,7 +58,7 @@ curl::curl_download(url = target_url, destfile = output_file)
 
 ```{r}
 load(file = "data/gravier.RData")
-gravier
+gravier <- as.data.frame(gravier)
 ```
 
 ```{r}
