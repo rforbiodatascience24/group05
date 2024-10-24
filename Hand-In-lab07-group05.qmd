@@ -57,5 +57,21 @@ curl::curl_download(url = target_url, destfile = output_file)
 ```
 
 ```{r}
+load(file = "data/gravier.RData")
 gravier
+```
+
+```{r}
+pca_fit <- gravier |> 
+  select(where(is.numeric)) |> 
+  prcomp(scale = TRUE)
+
+pca_fit %>%
+  augment(gravier) %>% # add original dataset back in
+  ggplot(aes(.fittedPC1, .fittedPC2, color = outcome)) + 
+  geom_point(size = 1.5) +
+  scale_color_manual(
+    values = c(malignant = "#D55E00", benign = "#0072B2")
+  ) +
+  theme_half_open(12) + background_grid()
 ```
