@@ -55,3 +55,7 @@ target_url <- "https://github.com/ramhiser/datamicroarray/raw/master/data/gravie
 output_file <- "data/gravier.RData"
 curl::curl_download(url = target_url, destfile = output_file)
 ```
+
+```{r}
+gravier
+```
